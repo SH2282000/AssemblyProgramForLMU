@@ -1,14 +1,68 @@
-<!doctype html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0a9342"><title>Authentication</title><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3)" href="/apple-touch-startup-image-1182x2208.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 414px) and (device-height: 736px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3)" href="/apple-touch-startup-image-1242x2148.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="/apple-touch-startup-image-1496x2048.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="/apple-touch-startup-image-1536x2008.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="/apple-touch-startup-image-320x460.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="/apple-touch-startup-image-640x1096.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="/apple-touch-startup-image-640x920.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="/apple-touch-startup-image-748x1024.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2)" href="/apple-touch-startup-image-750x1294.png?v=7de29d54ed"><link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="/apple-touch-startup-image-768x1004.png?v=7de29d54ed"><link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png?v=7de29d54ed"><link rel="icon" type="image/png" sizes="230x230" href="/favicon-230x230.png?v=7de29d54ed"><link rel="icon" type="image/png" sizes="192x192" href="/android-chrome-192x192.png?v=7de29d54ed"><link rel="icon" type="image/png" sizes="228x228" href="/coast-228x228.png?v=7de29d54ed"><link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png?v=7de29d54ed"><link rel="manifest" href="/site.webmanifest?v=7de29d54ed"><link rel="mask-icon" href="/safari-pinned-tab.svg?v=7de29d54ed" color="#0a9342"><link rel="shortcut icon" href="/favicon.ico?v=7de29d54ed"><meta property="og:image" content="/open-graph.png?v=7de29d54ed"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Uni2work"><meta name="application-name" content="Uni2work"><meta name="msapplication-TileColor" content="#0a9342"><meta name="msapplication-TileImage" content="/mstile-144x144.png?v=7de29d54ed"><link rel="stylesheet" href="https://uni2work.ifi.lmu.de/static/res/wp-4.43/f45e38cb4bc44c1b2b3029ec9e9a9f66c031.css?etag=dxlLo6lX"><link rel="stylesheet" href="https://uni2work.ifi.lmu.de/tmp/1t7lPDAiVsDjfNERddT_tDeX.css"></head><body class="theme--default "><input class="navbar__container-radio--none" name="nav-container" type="radio" checked id="container-radio-none" uw-no-radiobox><input class="navbar__container-radio" name="nav-container" type="radio" id="hident3-radio" uw-no-radiobox><input class="navbar__container-radio" name="nav-container" type="radio" id="hident16-radio" uw-no-radiobox><aside class="main__aside" uw-asidenav><div class="asidenav__logo"><a class="asidenav__logo-link" href="/"><div class="asidenav__logo-lmu"><svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect x="0" y="0" width="80" height="80" fill="white" stroke="currentColor" stroke-width="2" />
-  <path d="M6.28906 73.7111V46.4124H8.85405V71.6958H16.7322V73.7111H6.28906Z" fill="currentColor" />
-  <path d="M19.4804 73.7111V46.4124H28.0914L32.0305 67.8483H32.5801L36.6108 46.4124H45.3135V73.7111H40.0003V50.443H39.5422L34.8703 73.7111H29.5571L24.7936 50.443H24.2439V73.7111H19.4804Z" fill="currentColor" />
-  <path d="M48.7945 64.0008V46.4124H58.0468V65.0085C58.0468 66.9322 59.6452 67.872 61.3446 67.8483C63.0171 67.8249 64.5508 66.749 64.5508 65.0085V46.4124H73.8031V64.0008C73.8031 66.1078 73.6565 74.2412 61.3446 74.3523C49.0327 74.4635 48.7945 66.0161 48.7945 64.0008Z" fill="currentColor" />
-</svg>
-</div><span class="asidenav__logo-uni2work">Uni2work</span></a></div><div class="asidenav"><div class="asidenav__sigillum"><img src="https://uni2work.ifi.lmu.de/static/res/img/lmu/sigillum.svg?etag=83E52O4j"></div></div></aside><div class="navbar-container"><nav class="navbar"><div class="navbar__stack"><div class="navbar__list-wrapper"><ul class="navbar__list navbar__list-left"><li class="navbar__list-item navbar__list-item--favorite"><a class="navbar__link-wrapper" href="#"><div class="navbar__link-icon"><i class="fas fa-2x fa-star"></i></div><div class="navbar__link-label">Favourites</div></a></li><li class="navbar__list-item "><a class="navbar__link-wrapper" href="https://uni2work.ifi.lmu.de/" id="hident14"><div class="navbar__link-icon"><i class="fas fa-2x fa-megaphone"></i></div><div class="navbar__link-label">News</div></a></li><li class="navbar__list-item "><a class="navbar__link-wrapper" href="https://uni2work.ifi.lmu.de/course" id="hident15"><div class="navbar__link-icon"><i class="fas fa-2x fa-graduation-cap"></i></div><div class="navbar__link-label">Courses</div></a></li><li class="navbar__list-item navbar__list-item--container-selector"><label class="navbar__link-wrapper" for="hident16-radio" id="hident16"><div class="navbar__link-icon"><i class="fas fa-2x fa-ellipsis-h"></i></div><div class="navbar__link-label"></div></label></li></ul><ul class="navbar__list"><li class="navbar__list-item "><div class="modal" uw-modal data-modal-trigger="hident6" data-modal-closeable></div><a class="navbar__link-wrapper" href="https://uni2work.ifi.lmu.de/help?referer=%2Fauth%2Flogin" id="hident6"><div class="navbar__link-icon"><i class="fas fa-2x fa-question"></i></div><div class="navbar__link-label">Support</div></a></li><li class="navbar__list-item navbar__list-item--container-selector"><label class="navbar__link-wrapper" for="hident3-radio" id="hident3"><div class="navbar__link-icon"><i class="fas fa-2x fa-flag-alt"></i></div><div class="navbar__link-label">Language</div></label></li><li class="navbar__list-item navbar__list-item--active"><div class="modal" uw-modal data-modal-trigger="hident2" data-modal-closeable></div><a class="navbar__link-wrapper" href="https://uni2work.ifi.lmu.de/auth/login" id="hident2"><div class="navbar__link-icon"><i class="fas fa-2x fa-sign-in-alt"></i></div><div class="navbar__link-label">Login</div></a></li></ul></div><div class="navbar__container-list " id="hident3-container"><label class="navbar__container-list-closer" for="container-radio-none"><i class="fas fa-fw fa-chevron-up"></i></label><ul><li class="navbar__container-list-item "><form id="hident19" method="POST" action="https://uni2work.ifi.lmu.de/user/lang?referer=%2Fauth%2Flogin" enctype="application/x-www-form-urlencoded"><input type="hidden" name="_token" value="S1WGZ1b3aO"><input type="hidden" name="language" value="de-de-formal"><button class="navbar__container-link " type="submit">Deutsch (Deutschland)</button></form></li><li class="navbar__container-list-item navbar__container-list-item--active"><form id="hident20" method="POST" action="https://uni2work.ifi.lmu.de/user/lang?referer=%2Fauth%2Flogin" enctype="application/x-www-form-urlencoded"><input type="hidden" name="_token" value="S1WGZ1b3aO"><input type="hidden" name="language" value="en-eu"><button class="navbar__container-link navbar__container-link--active" type="submit">English (Europe)</button></form></li></ul></div><div class="navbar__container-list navbar__container-list--left" id="hident16-container"><label class="navbar__container-list-closer" for="container-radio-none"><i class="fas fa-fw fa-chevron-up"></i></label><ul><li class="navbar__container-list-item "><a class="navbar__container-link " href="https://uni2work.ifi.lmu.de/term" id="hident17">Semesters</a></li><li class="navbar__container-list-item "><a class="navbar__container-link " href="https://uni2work.ifi.lmu.de/allocation" id="hident18">Central allocations</a></li></ul></div></div></nav></div><div class="main"><div class="main__content" uw-poc uw-handler="AuthR"><div class="breadcrumbs__container"><a class="breadcrumbs__home" href="https://uni2work.ifi.lmu.de/"><i class="fas fa-fw fa-home"></i></a><ul class="breadcrumbs__list list--inline"><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="https://uni2work.ifi.lmu.de/">News</a></li><li class="breadcrumbs__item-separator"><i class="fas fa-angle-right"></i></li><li class="breadcrumbs__item breadcrumbs__last-item">Login</li></ul></div><div class="main__content-body"><h1 class="headline-one">Authentication</h1><section><h2>Campus login</h2>
-<form id="login--campus" method="POST" action="https://uni2work.ifi.lmu.de/auth/page/LDAP" enctype="application/x-www-form-urlencoded" uw-no-navigate-away-prompt=""><input type="hidden" name="_token" value="S1WGZ1b3aO">
-<div class="form-group interactive-fieldset__target form-group--required "><label class="form-group-label" for="hident21"><span class="form-group-label__caption">Campus account</span></label><div class="form-group__input"><input id="hident21" name="f1" type="text" required value="" placeholder="First.Last@campus.lmu.de" autofocus=""></div></div><div class="form-group interactive-fieldset__target form-group--required "><label class="form-group-label" for="hident22"><span class="form-group-label__caption">Password</span></label><div class="form-group__input"><input id="hident22" name="f2" type="password" required="" placeholder="Password"></div></div><div class="form-section-legend"><span class="form-group__required-marker"></span>Required fields</div><button class="btn btn-primary" type="submit" name="" value="submit" id="hident23">Submit</button></form></section>
-<section><h2>Uni2work login</h2>
-<p>Use this form if you have received special credentials from the Uni2work-team. Most users need to use campus login!</p>
-<form id="login--hash" method="POST" action="https://uni2work.ifi.lmu.de/auth/page/PWHash" enctype="application/x-www-form-urlencoded" uw-no-navigate-away-prompt=""><input type="hidden" name="_token" value="S1WGZ1b3aO">
-<div class="form-group interactive-fieldset__target form-group--required "><label class="form-group-label" for="hident24"><span class="form-group-label__caption">Identification</span></label><div class="form-group__input"><input id="hident24" name="f1" type="text" required value="" placeholder="Identification"></div></div><div class="form-group interactive-fieldset__target form-group--required "><label class="form-group-label" for="hident25"><span class="form-group-label__caption">Password</span></label><div class="form-group__input"><input id="hident25" name="f2" type="password" required="" placeholder="Password"></div></div><div class="form-section-legend"><span class="form-group__required-marker"></span>Required fields</div><button class="btn btn-primary" type="submit" name="" value="submit" id="hident26">Submit</button></form></section>
-</div><div class="alerts" id="alerts-1" uw-alerts><div class="alerts__toggler"></div><div class="alert alert-info"><div class="alert__closer"></div><div class="alert__icon fas fa-info-circle"></div><div class="alert__content"><div class="modal" uw-modal data-modal-trigger="qiaVfQkwFq1EyyrYDAB6uN" data-modal-closeable></div><a class="modal__trigger" href="https://uni2work.ifi.lmu.de/msg/14bf60c8-eb55-b36a-745b-27a912d655be" id="qiaVfQkwFq1EyyrYDAB6uN"><span class="modal__trigger-label"><p>Teaching online during the summer semester 2020</p></span></a></div></div><div class="alert alert-success"><div class="alert__closer"></div><div class="alert__icon fas fa-info-circle"></div><div class="alert__content"><div class="modal" uw-modal data-modal-trigger="Auaz3GzpYFSIOTjeBW7ilc" data-modal-closeable></div><a class="modal__trigger" href="https://uni2work.ifi.lmu.de/msg/da7ce3ad-bf40-07c6-f25e-866d0d7b4d50" id="Auaz3GzpYFSIOTjeBW7ilc"><span class="modal__trigger-label"><p>Pre-Launch Talents4Future</p></span></a></div></div></div><footer class="footer"><ul class="footer-links list--inline"><li><a href="https://uni2work.ifi.lmu.de/info/legal#data-protection" id="hident7">Data protection</a></li><li><a href="https://uni2work.ifi.lmu.de/info/legal#terms-of-use" id="hident8">Terms of use</a></li><li><a href="https://uni2work.ifi.lmu.de/info/legal#copyright" id="hident9">Copyright</a></li><li><a href="https://uni2work.ifi.lmu.de/info/legal#imprint" id="hident10">Imprint</a></li><li><a href="https://uni2work.ifi.lmu.de/info" id="hident11">Information</a></li><li><a href="https://uni2work.ifi.lmu.de/info/faq" id="hident12">FAQ</a></li><li><a href="https://uni2work.ifi.lmu.de/info/glossary" id="hident13">Glossary</a></li></ul></footer></div></div><script src="https://uni2work.ifi.lmu.de/static/res/wp-4.43/495c6cab827abeda7d6bbcf23fcc7fbf44f7.js?etag=Zzrwvl7A"></script><script src="https://uni2work.ifi.lmu.de/static/res/wp-4.43/add334bb86f072908f949be88dd09fbb2154.js?etag=OoqB8FDC"></script><script src="https://uni2work.ifi.lmu.de/static/res/wp-4.43/5f4c93f9978d13b41a6f2c86fdee2c06c50b.js?etag=5p3gAr9J"></script><script src="https://uni2work.ifi.lmu.de/static/res/wp-4.43/fd0c7cdfeb7170d0e85a793fa4e0bb895312.js?etag=q0gZyEG5"></script><script src="https://uni2work.ifi.lmu.de/tmp/NVo-tm2XGBeygFEL1UfW_HJB.js"></script></body></html>
+# change the extension for .asm and execute it with MARS 4.5
+.data
+needle: .asciiz "Guten Tag"
+result: .space 18
+ascii_vocals: .asciiz "aeiouAEIOU"
+string1: .asciiz "Rechnerarchitektur enthaelt: "
+string2: .asciiz " Vokale."
+string3: .asciiz "\nRechnerarchitektur ohne Vokale ist: "
+nline: .asciiz "\n"
+
+.text
+main:
+	li $t0, 0 # Counter for the number of vowels
+	li $t1, 0 # Index of the character of needle currently being viewed
+	li $t2, 0 # Index of the currently viewed vocals in ascii_vocals
+	li $t3, 0 # Index of the next free space in result
+
+n_loop: 
+	lb $t4, needle($t1) # (i) Der aktuelle Buchstabe des Strings needle wird in ein Register geladen
+	beqz $t4, end # (iv) Führe einen Sprung durch, sofern alle Buchstaben des Strings needle betrachtet wurden.
+
+vocs:
+	# Fuegen Sie hier Ihre Loesung ein
+	lb $t5, ascii_vocals($t2)
+	beq $t4, $t5, vocal
+	beq $t2, 10, save
+	addi $t2, $t2, 1
+	j vocs
+
+vocal: 
+	addi $t0, $t0, 1  #(iii)Erhöhe die Anzahl der gezählten Vokale um eins.
+	li $t2, 0
+	addi $t1, $t1, 1
+	j n_loop
+
+save:
+	# Fuegen Sie hier Ihre Loesung ein
+	sb $t4, result($t3)
+	addi $t3, $t3, 1
+
+reset: 
+	add $t1, $t1, 1
+	li $t2, 0
+	j n_loop
+
+end: 
+	li $v0, 4
+	la $a0, string1
+	syscall
+
+	li $v0, 1
+	move $a0, $t0
+	syscall #(ii)Die Anzahl der gezählten Vokale wird auf der Konsole ausgegeben
+
+	li $v0, 4
+	la $a0, string2
+	syscall
+
+	li $v0, 4
+	la $a0, string3
+	syscall
+
+	li $v0, 4
+	la $a0, result
+	syscall
+
+	li $v0, 10
+	syscall
